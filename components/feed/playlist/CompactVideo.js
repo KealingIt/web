@@ -17,7 +17,7 @@ export default function CompactVideo(props) {
         <div className={styles.CompactVideo}>
             <div className={styles.CompactVideo__Thumbnail}>
                 <div className={styles.CompactVideo__ThumbnailImageWrapper}>
-                    <img className={styles.CompactVideo__ThumbnailImage} src={"/thumbnails/" + thumbnail + ".png"} layout="fill" objectFit="cover"/>
+                    <img className={styles.CompactVideo__ThumbnailImage} src={"/web/thumbnails/" + thumbnail + ".png"} layout="fill" objectFit="cover"/>
                 </div>
 
                 <div className={styles.CompactVideo__ThumbnailTextContainer}>
