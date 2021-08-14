@@ -22,3 +22,16 @@ jobs:
         CONTENT_SHEET_ID: ${{ secrets.CONTENT_SHEET_ID }}
         PLAYLISTS_SHEET_ID: ${{ secrets.PLAYLISTS_SHEET_ID }}
         GOOGLE_SPREADSHEET_CREDENTIALS: ${{ secrets.GOOGLE_SPREADSHEET_CREDENTIALS }}
+    - name: Export
+      run: npm run export
+      env:
+        NEXT_PUBLIC_BASE_PATH: /
+    - run: touch ./out/.nojekyll
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.5.9
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: out

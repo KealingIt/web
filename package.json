@@ -6,7 +6,8 @@
     "dev": "node lib/content.js && next dev",
     "build": "node lib/content.js && next build",
     "start": "node lib/content.js && next start",
-    "lint": "node lib/content.js && next lint"
+    "lint": "node lib/content.js && next lint",
+    "export": "next export"
   },
   "dependencies": {
     "child_process": "^1.0.2",
