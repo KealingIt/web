@@ -18,3 +18,7 @@ jobs:
       run: npm install
     - name: Get content file
       run: npm run build
+      env:
+        CONTENT_SHEET_ID: ${{ secrets.CONTENT_SHEET_ID }}
+        PLAYLISTS_SHEET_ID: ${{ secrets.PLAYLISTS_SHEET_ID }}
+        GOOGLE_SPREADSHEET_CREDENTIALS: ${{ secrets.GOOGLE_SPREADSHEET_CREDENTIALS }}
