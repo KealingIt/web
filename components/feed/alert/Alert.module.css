@@ -1,0 +1,45 @@
+.Alert {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: scroll;
+    padding-bottom: 30px;
+}
+
+.Alert__Box {
+    position: relative;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: min(100%, 400px);
+    border-radius: 15px;
+    margin-bottom: 100px;
+    background: #FFFFFF;
+    padding: 15px 60px;
+}
+
+.Alert__Box__Content {
+}
+
+.Alert__Box__Done {
+    border: none;
+    background-color:  rgb(50, 170, 245);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 0;
+    width: 80px;
+    border-radius: 40px;
+    display: block;
+    margin: 35px auto 10px auto;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Alert__Box__Done:hover {
+    background-color:  rgb(35, 149, 219);
+}

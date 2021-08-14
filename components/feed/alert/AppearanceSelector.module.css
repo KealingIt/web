@@ -1,0 +1,33 @@
+.AppearanceOption, .AppearanceOption_selected {
+    background: var(--color1);
+    transition: background 0.3s, border 0.3s;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--color3);
+    cursor: pointer;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.AppearanceOption:not(:last-child), .AppearanceOption_selected:not(:last-child) {
+    margin-right: 5px;
+}
+
+.AppearanceOption_selected::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(50, 170, 245)
+}
+
+.AppearanceOption:hover {
+    background: var(--color2);
+    color: #1c2531
+}

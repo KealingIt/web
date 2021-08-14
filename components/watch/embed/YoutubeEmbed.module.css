@@ -1,0 +1,23 @@
+.YoutubeEmbedWrapper {
+    padding: 0 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .YoutubeEmbedWrapper {
+        padding: 0 20px;
+    }
+}
+
+.YoutubeEmbedWrapper > iframe {
+    animation: video-loading 1s linear 0s infinite;
+}
+
+@keyframes video-loading {
+    0%, 100% {
+        background-color: #000;
+    } 50% {
+        background-color: #222;
+    }
+}

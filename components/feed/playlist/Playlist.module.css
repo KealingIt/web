@@ -1,0 +1,112 @@
+.Playlist {
+    background: var(--feed-element-background-color);
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.Playlist__Videos {
+    display: grid;
+    grid-gap: 30px;
+    border-top: 3px solid var(--feed-background-color);
+}
+
+@media only screen and (max-width: 1649px) and (min-width: 750px) {
+    .Playlist__Videos {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .Playlist__Videos div {
+        grid-column: span 2;
+    }
+    
+    .Playlist__Videos div:last-child:nth-child(2n - 1) {
+        grid-column-end: -2;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .Playlist__Videos {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    
+    .Playlist__Videos div {
+        grid-column: span 2;
+    }
+    
+    .Playlist__Videos div:last-child:nth-child(3n - 1) {
+        grid-column-end: -2;
+    }
+
+    .Playlist__Videos div:nth-last-child(2):nth-child(3n + 1) {
+        grid-column-end: 4;
+    }
+
+    .Playlist__Videos div:last-child:nth-child(3n -2) {
+        grid-column-end: 5;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .Playlist__Videos {
+        padding: 30px;
+    }
+
+    .Playlist__Title {
+        font-size: 26px;
+        padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .Playlist__Videos {
+        padding: 15px;
+    }
+
+    .Playlist__Title {
+        font-size: 22px;
+        padding: 20px 20px;
+    }
+}
+
+@media only screen and (min-width: 1650px) {
+    .Playlist__Title {
+        width: calc(1096px - 30px);
+    }
+}
+
+@media only screen and (max-width: 1649px) and (min-width: 750px) {
+    .Playlist__Title {
+        width: calc(740px - 30px);
+    }
+}
+
+@media only screen and (max-width: 749px) and (min-width: 400px) {
+    .Playlist__Title {
+        width: calc(385px - 30px);
+    }
+}
+
+@media only screen and (max-width: 399px) and (min-width: 350px) {
+    .Playlist__Title {
+        width: calc(355px - 20px);
+    }
+}
+
+@media only screen and (max-width: 349px) and (min-width: 320px) {
+    .Playlist__Title {
+        width: calc(305px - 20px);
+    }
+}
+
+@media only screen and (max-width: 319px) and (min-width: 20px) {
+    .Playlist__Title {
+        width: calc(255px - 20px);
+    }
+}
+
+.Playlist__Title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--feed-element-header-color);
+}

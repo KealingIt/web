@@ -1,0 +1,21 @@
+:root:root {
+    --feed-background-color: #F4F4F4;
+    --feed-element-background-color: #FFFFFF;
+    --feed-element-header-color: #000000;
+
+    --compact-video-background-color: #F4F4F4;
+    --compact-video-background-color-hover: #EBEBEB;
+    --compact-video-header-color: #000000;
+    --compact-video-description-color: #888888;
+    --compact-video-loading-1: #FFFFFF;
+    --compact-video-loading-2: #CCCCCC;
+
+    --notice-board-linked-item-background-hover-color: #F9F9F9;
+    --notice-board-item-header-color: #000000;
+    --notice-board-item-description-color: #9D9D9D;
+
+    --mobile-feed-nav-link-color: #AAAAAA;
+    --mobile-feed-nav-link-hover-color: #777777;
+    --mobile-feed-nav-link-selected-color: #000000;
+    --mobile-feed-nav-link-background: rgba(0, 0, 0, 0.05);
+}
