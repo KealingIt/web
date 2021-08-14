@@ -33,7 +33,7 @@ jobs:
     - name: Export
       run: npm run export
       env:
-        NEXT_PUBLIC_BASE_PATH: /
+        NEXT_PUBLIC_BASE_PATH: /web
     - run: touch ./out/.nojekyll
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.9
