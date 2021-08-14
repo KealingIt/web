@@ -5,7 +5,6 @@ import YoutubeEmbed from '../../components/watch/embed/YoutubeEmbed'
 import Link from 'next/link'
 import Layout from '../../components/structure/Layout'
 import CloseButton from '../../components/watch/closeButton/CloseButton'
-import Image from 'next/image'
 
 export default function VideoPage(props) {
     const date = new Date(props.video.date);

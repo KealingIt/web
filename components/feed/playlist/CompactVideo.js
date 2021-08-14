@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './CompactVideo.module.css'
 import Link from 'next/link'
-import Image from 'next/image';
 
 export default function CompactVideo(props) {
     const { vanityId, youtubeId, title, description, type, show, season, episode, thumbnail, length } = props.data;
@@ -18,7 +17,7 @@ export default function CompactVideo(props) {
         <div className={styles.CompactVideo}>
             <div className={styles.CompactVideo__Thumbnail}>
                 <div className={styles.CompactVideo__ThumbnailImageWrapper}>
-                    <Image className={styles.CompactVideo__ThumbnailImage} src={"/thumbnails/" + thumbnail + ".png"} layout="fill" objectFit="cover"/>
+                    <img className={styles.CompactVideo__ThumbnailImage} src={"/thumbnails/" + thumbnail + ".png"} layout="fill" objectFit="cover"/>
                 </div>
 
                 <div className={styles.CompactVideo__ThumbnailTextContainer}>
